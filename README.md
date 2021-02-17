@@ -5,17 +5,24 @@ A simple responsive font size which depends on screen size.
 ## Installation
 
 ```sh
-npm install react-native-font-responsive
+yarn add react-native-font-responsive
 ```
 
 ## Usage
 
 ```js
-import FontResponsive from "react-native-font-responsive";
+import * as React from 'react';
 
-// ...
+import { StyleSheet, View, Text } from 'react-native';
+import FontResponsive from 'react-native-font-responsive';
 
-const result = await FontResponsive.multiply(3, 7);
+export default function App() {
+  return (
+    <View>
+      <Text style={{ fontSize: FontResponsive(20) }}>Hello World</Text>
+    </View>
+  );
+}
 ```
 
 ## Contributing
